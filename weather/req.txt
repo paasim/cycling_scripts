@@ -1,0 +1,1 @@
+/wfs?request=getFeature&storedquery_id=fmi::observations::weather::simple&timestep=60&parameters=t2m,r_1h,ws_10min&fmisid=100971

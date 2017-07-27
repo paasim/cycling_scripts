@@ -1,0 +1,12 @@
+.localized
+.DS_Store
+apik.txt
+lines.out
+*.swp
+*.xml
+*.html
+*.out
+*.csv
+*.sqlite
+raw.*
+db_dir.txt
