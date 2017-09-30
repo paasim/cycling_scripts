@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
 DB=$(cat ../db_dir.txt)
 

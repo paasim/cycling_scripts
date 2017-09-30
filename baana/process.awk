@@ -1,4 +1,4 @@
-#! /usr/bin/awk -f
+#!/usr/bin/env awk -f
 
 function getval(string) {
   gsub(/\t|<[^>]*>|&#160;/, "", string)

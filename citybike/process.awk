@@ -1,4 +1,5 @@
-#! /usr/bin/awk -f
+#!/usr/bin/env awk -f
+
 function getval(string) {
   return substr(string, index(string, ":")+1)
 }
