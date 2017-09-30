@@ -9,7 +9,7 @@ curl 'http://www1.infracontrol.com/cykla/barometer/barometer_fi.asp?system=helsi
 
 # Get the count from the data and append the timestamp to it
 rm -f data.csv
-./process.awk -v time="$TIME" raw.html > data.csv
+awk -f process.awk -v time="$TIME" raw.html > data.csv
 
 # read the data to the db
 sqlite3 -csv "$DB" '.import data.csv baana'

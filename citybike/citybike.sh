@@ -22,11 +22,11 @@ DATA
 # transform curly brackets to newlines, fields contain the text 'stationId'.
 # remove quotation marks
 rm -f lines.out
-./clean.awk raw.txt > lines.out
+awk -f clean.awk raw.txt > lines.out
 
 # process the data
 rm -f data.csv
-./process.awk -v time="$TIME" lines.out > data.csv
+awk -f process.awk -v time="$TIME" lines.out > data.csv
 
 # read the data to the db
 sqlite3 -csv "$DB" '.import data.csv citybike'
