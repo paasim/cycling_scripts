@@ -5,7 +5,7 @@ DB=$(cat ../db_dir.txt)
 
 # download the raw data
 rm -f raw.html
-curl 'http://www1.infracontrol.com/cykla/barometer/barometer_fi.asp?system=helsinki&mode=year' > raw.html
+curl --silent 'http://www1.infracontrol.com/cykla/barometer/barometer_fi.asp?system=helsinki&mode=year' > raw.html
 
 # Get the count from the data and append the timestamp to it
 rm -f data.csv

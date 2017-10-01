@@ -5,7 +5,7 @@ DB=$(cat ../db_dir.txt)
 
 # get the data
 rm -f raw.txt
-curl https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql \
+curl --silent 'https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql' \
 -H "Content-Type: application/graphql" \
 -o raw.txt \
 -d @- << DATA
